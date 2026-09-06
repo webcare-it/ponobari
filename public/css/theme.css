@@ -1,0 +1,87 @@
+/* Theme Variables Usage Examples */
+
+/* Primary Color - Main brand color */
+.btn-primary,
+.primary-bg {
+    background-color: var(--primary, #053C6B) !important;
+}
+
+.text-primary {
+    color: var(--primary, #053C6B) !important;
+}
+
+.border-primary {
+    border-color: var(--primary, #053C6B) !important;
+}
+
+/* Secondary Color - Secondary elements */
+.btn-secondary,
+.secondary-bg {
+    background-color: var(--secondary, #333333) !important;
+}
+
+.text-secondary {
+    color: var(--secondary, #333333) !important;
+}
+
+/* Accent Color - Highlights and special elements */
+.btn-accent,
+.accent-bg {
+    background-color: var(--accent, #f41127) !important;
+}
+
+.text-accent {
+    color: var(--accent, #f41127) !important;
+}
+
+.border-accent {
+    border-color: var(--accent, #f41127) !important;
+}
+
+/* Category Background */
+.category-bg,
+.category-items-wrapper,
+.category-icon-outer {
+    background-color: var(--category-bg, #053C6B) !important;
+}
+
+/* Header Background */
+.header,
+.header-section,
+.header-top-wrapper,
+.header-bottom-wrapper {
+    background-color: var(--header-bg, #ffffff) !important;
+}
+
+/* Footer Background */
+.footer,
+.footer-section,
+.footer__main-wrapper,
+.footer__bottom-wrapper {
+    background-color: var(--footer-bg, #333333) !important;
+}
+
+/* Additional utility classes for theme colors */
+.bg-theme-primary {
+    background-color: var(--primary, #053C6B) !important;
+}
+
+.bg-theme-secondary {
+    background-color: var(--secondary, #333333) !important;
+}
+
+.bg-theme-accent {
+    background-color: var(--accent, #f41127) !important;
+}
+
+.text-theme-primary {
+    color: var(--primary, #053C6B) !important;
+}
+
+.text-theme-secondary {
+    color: var(--secondary, #333333) !important;
+}
+
+.text-theme-accent {
+    color: var(--accent, #f41127) !important;
+}

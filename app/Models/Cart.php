@@ -1,0 +1,33 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Cart extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+        'user_id',
+        'product_id',
+        'qty',
+        'price',
+        'ip_address',
+        'color',
+        'size'
+    ];
+
+    public function product()
+    {
+        return $this->belongsTo(Product::class, 'product_id', 'id');
+    }
+
+    public function productImage()
+    {
+        return $this->hasOne(ProductImage::class, 'product_id', 'product_id')
+                    ->where('color', $this->color)
+                    ->where('size', $this->size);
+    }
+}
